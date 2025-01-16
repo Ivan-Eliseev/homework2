@@ -12,9 +12,17 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
+		padding: 0 40px;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#hw1 {
+	padding-bottom: 40px;
+}
+
+#hw3 {
+	margin: 40px 0;
 }

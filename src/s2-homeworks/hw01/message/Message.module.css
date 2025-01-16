@@ -1,66 +1,56 @@
 .message {
-    display: flex;
-    align-items: flex-start; /* Выровняем элементы по началу сообщения */
-    margin: 15px 0;
-    padding: 10px;
-    background-color: #f9f9f9; /* Фон для каждого сообщения */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
 }
 
 .imageAndText {
-    display: flex;
-    align-items: center; /* Выровняем элементы внутри по центру */
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row-reverse;
+	align-items: flex-end;
+	gap: 15px;
 }
 
 .imageAndText img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px; /* Отступ между аватаром и текстом */
+	width: 48px;
+	height: 48px;
 }
 
 .text {
-    position: relative;
-    max-width: 80%; /* Ограничиваем ширину */
-    word-wrap: break-word; /* Переносим длинные слова на новую строку */
-    white-space: pre-wrap; /* Обрезаем длинные строки и переносим текст */
-    overflow-wrap: anywhere; /* Чтобы текст переносился при любом возможном случае */
-    padding: 10px; /* Добавим немного внутреннего отступа */
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    font-size: 1rem;
-    line-height: 1.5;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 8px 13px;
+	background-color: #0066CC;
+	border-radius: 10px;
+	position: relative;
 }
 
 .text:after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: -10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent #f9f9f9 transparent transparent; /* Стрелка для сообщения */
+	content: '';
+	position: absolute;
+	right: -12px;
+	bottom: 0px;
+	border: 15px solid transparent;
+	border-bottom: 13px solid #0066CC;
 }
 
 .name {
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    color: #333;
+	font-weight: 600;
+	font-size: 22px;
+	color: white;
+
 }
 
 .messageText {
-    background-color: #e0e0e0; /* Фон сообщения */
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 1rem;
-    line-height: 1.5;
+	color: white;
 }
 
 .time {
-    font-size: 0.85rem;
-    color: #888;
-    margin-left: auto; /* Выровняем время справа */
-    padding-left: 10px;
+	font-weight: 600;
+	font-size: 10px;
+	margin-right: 8px;
+	margin-top: 5px;
 }
